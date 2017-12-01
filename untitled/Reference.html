@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1><p id="p1"></h1>
+<h1><p id="p2"></h1>
+<script>
+    var person={
+        firstName: "James",
+        lastName: "Bond",
+        age: 25,
+        getFullName: function()
+        {
+            return this.firstName + '' + this.lastName;
+        }
+    };
+    document.getElementById("p1").innerHTML=person.getFullName();
+    var a=person;
+    a.firstName="Sapta"
+    document.getElementById("p2").innerHTML=person.getFullName();
+</script>
+</body>
+</html>
+</body>
+</html>

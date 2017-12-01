@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1><p id="p1"></h1>
+<h1><p id="p2"></h1>
+<script>
+    var Person=function(firstName,lastName)
+    {
+        this.firstName=firstName;
+        this.lastName=lastName;
+
+        this.getFullName=function()
+        {
+            return this.firstName + '' + this.lastName;
+        }
+    };
+    var per2=new Person("SApta","lastName");
+    document.getElementById("p1").innerHTML=per2.getFullName();
+</script>
+</body>
+</html>

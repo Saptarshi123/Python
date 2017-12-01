@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1><p id="p1"></h1>
+<h1><p id="p2"></h1>
+<script>
+    var Person=function(firstName,lastName)
+    {
+        this.firstName=firstName;
+        this.lastName=lastName;
+    };
+    person=new Person();
+    if(person.hasOwnProperty("Saha"))
+    document.write("Exists");
+    else
+        document.write("Doesn't Exist");
+</script>
+
+</body>
+</html>
