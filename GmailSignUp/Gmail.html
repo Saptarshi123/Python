@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <title>Gmail SignUp</title>
+    <link rel='stylesheet' href='form-validation.css' type='text/css' />
+    <script src="form-validation.js"></script>
+</head>
+<body onload="document.registration.userid.focus();">
+<h1>GMAIL SIGNUP FORM</h1>
+<form name='registration' onSubmit="return formValidation();">
+    <ul>
+        <li><label for="firstname">First Name:</label></li>
+        <li><input type="text" name="firstname" size="12" required/></li>
+
+        <li><label for="lastname">Last Name:</label></li>
+        <li><input type="text" name="lastname" size="12" required/></li>
+
+        <li><label for="userid">Choose a User Name:</label></li>
+        <li><input type="text" name="userid" size="12" required/></li>
+
+        <li><label>Password:</label></li>
+        <li><input type="password" name="passid" id="passid" size="12" required/></li>
+
+        <li><label>Confirm Password:</label></li>
+        <li><input type="password" name="conpassid" id="conpassid" size="12" required/></li>
+
+        <li><label for="zip">ZIP Code:</label></li>
+        <li><input type="text" name="zip" required/></li>
+
+        <li><label>Language:</label></li>
+        <li><input type="checkbox" name="en" value="en" checked /><span>English</span></li>
+        <li><input type="checkbox" name="nonen" value="noen" /><span>Non English</span></li>
+
+        <li><label id="gender">Sex:</label></li>
+        <li><input type="radio" name="msex" value="Male" /><span>Male</span></li>
+        <li><input type="radio" name="fsex" value="Female" /><span>Female</span></li>
+
+        <li><label for="email">Enter your Current Email Address:</label></li>
+        <li><input type="text" name="email" size="12" required/></li>
+
+        <li><label for="country">Location:</label></li>
+        <li><select name="country">
+            <option selected="" value="Default">(Please select a country)</option>
+            <option value="AF">Australia</option>
+            <option value="AL">Canada</option>
+            <option value="DZ">India</option>
+            <option value="AS">Russia</option>
+            <option value="AD">USA</option>
+        </select></li>
+        <li><input type="submit" name="submit" value="Submit" /></li>
+    </ul>
+</form>
+</body>
+</html>
